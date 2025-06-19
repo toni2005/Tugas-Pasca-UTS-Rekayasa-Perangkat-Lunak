@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Kamar Kost | JeparaKost</title>
+  <style>
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Warna background putih */
+  }
+
+  .section__container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+  }
+
+  h2.section__header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .kamar__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .kamar__card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(139, 69, 19, 0.2); /* Shadow coklat */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .kamar__card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .kamar__content {
+    padding: 1rem;
+    flex: 1;
+  }
+
+  .kamar__content h3 {
+    margin: 0 0 0.5rem;
+  }
+
+  .kamar__content p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+  }
+
+  .status-tersedia {
+    color: green;
+    font-weight: bold;
+  }
+
+  .status-penuh {
+    color: red;
+    font-weight: bold;
+  }
+
+  .btn-sewa {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-sewa:hover {
+    background-color: #218838;
+  }
+
+  @media (max-width: 600px) {
+    .kamar__card img {
+      height: 180px;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+  <nav>
+    <div class="nav__logo">
+      <h2>JeparaKost</h2>
+    </div>
+    <ul class="nav__links">
+      <li class="link"><a href="index.html">Home</a></li>
+      <li class="link"><a href="kamar.html">Kamar</a></li>
+      <li class="link"><a href="#">Booking</a></li>
+      <li class="link"><a href="#">Pengaduan</a></li>
+      <li class="link"><a href="#">Login</a></li>
+    </ul>
+  </nav>
+
+  <section class="section__container">
+    <h2 class="section__header">Daftar Kamar Kost</h2>
+    <div class="kamar__grid">
+
+      <div class="kamar__card">
+        <img src="assets/img/kmr/Kamar Putri A1.jpeg" alt="Kamar 1">
+        <div class="kamar__content">
+          <h3>Kamar Putri A1</h3>
+          <p><i class="ri-hotel-bed-line"></i> Kasur, Lemari, Meja</p>
+          <p><i class="ri-wifi-line"></i> Wi-Fi, Kamar Mandi Dalam</p>
+          <p><strong>Harga:</strong> Rp 450.000 / bulan</p>
+          <p class="status-tersedia">Tersedia</p>
+          <button class="btn-sewa">Sewa Sekarang</button>
+        </div>
+      </div>
+
+      <div class="kamar__card">
+        <img src="assets/img/kmr/Kamar Putra B2.jpg" alt="Kamar 2">
+        <div class="kamar__content">
+          <h3>Kamar Putra B2</h3>
+          <p><i class="ri-hotel-bed-line"></i> Kasur, Kipas Angin</p>
+          <p><i class="ri-parking-box-line"></i> Parkir Motor, Dapur</p>
+          <p><strong>Harga:</strong> Rp 400.000 / bulan</p>
+          <p class="status-penuh">Penuh</p>
+        </div>
+      </div>
+
+      <div class="kamar__card">
+        <img src="assets/img/kmr/Kamar Campur C3.jpg" alt="Kamar 3">
+        <div class="kamar__content">
+          <h3>Kamar Campur C3</h3>
+          <p><i class="ri-hotel-bed-line"></i> Kasur + Lemari</p>
+          <p><i class="ri-shield-user-line"></i> CCTV, Wi-Fi</p>
+          <p><strong>Harga:</strong> Rp 550.000 / bulan</p>
+          <p class="status-tersedia">Tersedia</p>
+          <button class="btn-sewa">Sewa Sekarang</button>
+        </div>
+      </div>
+
+      <div class="kamar__card">
+        <img src="assets/img/kmr/Kamar Putri D4.jpg" alt="Kamar 4">
+        <div class="kamar__content">
+          <h3>Kamar Putri D4</h3>
+          <p><i class="ri-hotel-bed-line"></i> AC, Kamar Mandi Dalam</p>
+          <p><i class="ri-wifi-line"></i> Wi-Fi, Meja Belajar</p>
+          <p><strong>Harga:</strong> Rp 600.000 / bulan</p>
+          <p class="status-tersedia">Tersedia</p>
+          <button class="btn-sewa">Sewa Sekarang</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <h3>JeparaKost</h3>
+        <p style="text-align: justify;">JeparaKost adalah platform pencarian kost terbaik di Kabupaten Jepara. Temukan kost nyaman, strategis, dan sesuai budget Anda hanya dalam beberapa klik.</p>
+        <p style="text-align: justify;">Dengan fitur pencarian interaktif, filter fasilitas, dan peta lokasi, JeparaKost memudahkan Anda menemukan hunian ideal dekat kampus, tempat kerja, atau pusat kota. Baik untuk pelajar, mahasiswa, maupun pekerja. </p>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <p>About Us</p>
+        <p>Our Team</p>
+        <p>Kamar</p>
+        <p>Booking</p>
+        <p>Pengaduan</p>
+      </div>
+      <div class="footer__col">
+        <h4>Legal</h4>
+        <p>FAQS</p>
+        <p>Terms & Conditions</p>
+        <p>Privacy Policy</p>
+      </div>
+      <div class="footer__col">
+        <h4>Resources</h4>
+        <p>Help Center</p>
+        <p>Partnership</p>
+      </div>
+      <div class="footer__bar">
+        Copyright © JeparaKost , All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
